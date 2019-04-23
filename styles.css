@@ -15,7 +15,7 @@ body {
 }
 
 h1 {
-  font-size: 3em; 
+  font-size: 4em; 
   font-weight: 800;
   padding: 30% 13% 0% 13%;
 }
@@ -35,12 +35,18 @@ input,
 button {
   border: 1px solid #607D8B;
   width: 60%;
-  height: 36px;
-  
+  height: 46px;
+  font-size: 2em;  
 }
 
 .inputs {
- margin-top: 40px; 
+ margin-top: 40px;
+}
+
+.inputs::placeholder {
+  color: #CFD8DC;
+  font-weight: 400;
+  padding: 10px;
 }
 
 .submit-btn {
@@ -57,6 +63,7 @@ button {
 
 .card-display {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   background-color: #CFD8DC;
 }
@@ -65,7 +72,7 @@ button {
   border: 2px solid #607D8B;
   width:  90%;
   height: 180px;
-  margin-top: 20px;
+  margin: auto;
   background-color: #FFF;
 }
 
