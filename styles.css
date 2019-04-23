@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Open-Sans', sans-serif;
+  color: #FFF;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.bookmark-form {
+  background-color: #455A64;
+}
+
+h1 {
+  font-size: 3em; 
+  font-weight: 800;
+  padding: 30% 13% 0% 13%;
+}
+
+img {
+  height: 1em;
+  width: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input,
+button {
+  border: 1px solid #607D8B;
+  width: 60%;
+  height: 36px;
+  margin-top: 40px;
+}
+
+.submit-btn {
+  margin-bottom: 50%;
+  background-color: #FFC107;
+  color: #FFF;
+  font-weight: 800;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: #FFD773;
+}
+
+@media screen and (max-width: 1036px) {
+
+  h1 {
+    margin-left: 0;
+  }
