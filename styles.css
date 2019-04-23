@@ -36,7 +36,11 @@ button {
   border: 1px solid #607D8B;
   width: 60%;
   height: 36px;
-  margin-top: 40px;
+  
+}
+
+.inputs {
+ margin-top: 40px; 
 }
 
 .submit-btn {
@@ -47,8 +51,71 @@ button {
   font-size: 1em;
 }
 
-button:hover {
+.submit-btn:hover {
   background-color: #FFD773;
+}
+
+.card-display {
+  display: flex;
+  justify-content: center;
+  background-color: #CFD8DC;
+}
+
+.bookmark-card {
+  border: 2px solid #607D8B;
+  width:  90%;
+  height: 180px;
+  margin-top: 20px;
+  background-color: #FFF;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  color: #455A64;
+  border-bottom: 1px solid #CFD8DC;
+  margin: 20px 20px 0px 15px;
+  font-size: 1.8em;
+}
+
+.input-link {
+  color: #607D8B;
+  border-bottom: 1px solid #F2F4F4;
+  font-size: 1.5em;
+  margin: 20px 255px 10px 20px;
+}
+
+.card-btns {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #CFD8DC;
+  margin: 12px 20px;
+}
+
+.mark-read-btn,
+.delete-btn {
+  align-self: flex-end;
+  border: none;
+  border-bottom: 1px solid #F2F4F4;
+  color: #455A64;
+  font-size: 1em;
+  width: 15%;
+  height: 40px;
+}
+
+.input-link:hover,
+.mark-read-btn:hover,
+.delete-btn:hover {
+  font-weight: 800;
+  color: #455A64;
+  border-bottom: 1px solid #FFC107;
+}
+
+.input-link:hover {
+  margin-right: 235px;
 }
 
 @media screen and (max-width: 1036px) {

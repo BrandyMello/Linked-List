@@ -9,17 +9,21 @@
   <section class="bookmark-form">
     <form id="bookmark-inputs">
       <h1>Linked <img src="images/linked-list-logo.svg"> List</h1>
-      <input type="text" name="title" class="bkmk-title">
-      <input type="text" name="url" class="bkmk-address">
-      <button value="bookmark-inputs" class="submit-btn">Enter</button>
+      <input type="text" name="title" class="bkmk-title inputs">
+      <input type="text" name="url" class="bkmk-address inputs">
+      <button value="bookmark-inputs" class="submit-btn inputs">Enter</button>
     </form>
   </section>
   <section class="card-display">
     <div class="bookmark-card">
-      <h2 class="card-title"></h2>
-      <p class="input-link"></p>
-      <button class="mark-read-btn">Read</button>
-      <button class="delete-btn">Delete</button>
+      <div class="card-info">
+        <h2 class="card-title">The Website Title</h2>
+        <p class="input-link">www.thewebsiturl.com</p>
+      </div>
+      <div class="card-btns">
+        <button class="mark-read-btn">Read</button>
+        <button class="delete-btn">Delete</button>
+      </div>
     </div>
   </section>
   <script type="text/javascript" src="index.js"></script>
