@@ -3,18 +3,10 @@ var bookmark = document.querySelector('.card-display')
 var bkmkInputs = document.querySelector('.bkmk-input')
 var titleInput = document.querySelector('.title-input');
 var urlInput = document.querySelector('.url-input');
-// var submitBookmark = document.querySelector('.bookmark-inputs');
-
-// submitBookmark.addEventListener('click', function (e) {
-//   var bkmkTitle = document.querySelector('.bkmk-title');
-//   var bkmkAddress = document.querySelector('.bkmk-address');
-//   var cardTitle = document.querySelector('.card-title');
-//   var cardLink = document.querySelector('.input-link');
-//   bkmkTitle.value = cardTitle.innerContent;
-//   bkmkAddress.value = cardLink.innerContent;
-// });
+var markRead = document.querySelector('.mark-read-btn')
 
 submit.addEventListener('click', createBookmark);
+markRead.addEventListener('click', toggleRead);
 
 function createBookmark(e) {
   e.preventDefault(e);
@@ -30,6 +22,7 @@ function createBookmark(e) {
       </div>
     </div>`
     clearInputs();
+    document.querySelector('.message').classList.add('hidden');
 }
 
 function clearInputs() {
@@ -37,4 +30,12 @@ function clearInputs() {
   urlInput.value = "";
 }
 
+function loadMessage() {
+  bookmark.innerHTML += `
+  <p class="message">You can bookmark websites here!</p>`;
+}
+window.onload = loadMessage;
 
+function toggleRead(e) {
+  
+}
