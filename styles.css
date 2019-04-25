@@ -124,6 +124,20 @@ button {
   margin-right: 235px;
 }
 
+.message {
+  font-size: 2em;
+  margin: 40px auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.read {
+  font-weight: 800;
+  color: #F05A28;
+}
+
 @media screen and (max-width: 1036px) {
 
   h1 {
