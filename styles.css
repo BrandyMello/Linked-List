@@ -136,6 +136,7 @@ button {
 .read {
   font-weight: 800;
   color: #F05A28;
+  border: none;
 }
 
 @media screen and (max-width: 1036px) {
