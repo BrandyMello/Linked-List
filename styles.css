@@ -36,7 +36,8 @@ button {
   border: 1px solid #607D8B;
   width: 60%;
   height: 46px;
-  font-size: 2em;  
+  font-size: 2em; 
+  outline: none; 
 }
 
 .inputs {
@@ -133,9 +134,10 @@ button {
   display: none;
 }
 
-.read {
+.read:focus {
   font-weight: 800;
   color: #F05A28;
+  border: none;
 }
 
 @media screen and (max-width: 1036px) {
